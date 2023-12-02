@@ -1,6 +1,14 @@
-<!-- <?php
+<?php
     require "session.php";
-?> -->
+    require "../koneksi.php";
+
+    $queryKategori = mysqli_query($con, "SELECT * FROM kategori");
+    $jumlahKategori = mysqli_num_rows($queryKategori);
+
+    $queryProduk = mysqli_query($con, "SELECT * FROM produk");
+    $jumlahProduk = mysqli_num_rows($queryProduk);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,22 +23,63 @@
     .kotak {
         border:solid;
     }
+
+    .summary-kategori{
+        background-color: #508D69;
+        border-radius: 15px;
+    }
+
+    .summary-produk{
+        background-color: #265073;
+        border-radius: 15px;
+    }
+
+    .no-decoration {
+        text-decoration: none;
+    }
+
 </style>
+
 <body>
     <?php require "navbar.php";?>
     <div class="container mt-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item active" aria-current="page">
-                    <i class="fas fa-home"></i>Home</li>
+                    <i class="fas fa-home"></i> Home</li>
             </ol>
         </nav>
         <h2>Halo <?php echo $_SESSION['username']; ?></h2>
 
         <div class="container mt-5">
             <div class="row">
-                <div class="col-lg-4 kotak">
-                    membuat tampilan admin dan fitur logout
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                    <div class="summary-kategori p-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <i class="fas fa-align-justify fa-7x text-black-50"></i>
+                            </div>
+                            <div class="col-6 text-white">
+                                <h3 class="fs-2">Kategori</h3>
+                                <p class="fs-4"><?php echo $jumlahKategori;  ?> Kategori</p>
+                                <p><a href="kategori.php" class="text-white no-decoration">Lihat Detail</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                    <div class="summary-produk p-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <i class="fas fa-box fa-7x text-black-50"></i>
+                            </div>
+                            <div class="col-6 text-white">
+                                <h3 class="fs-2">Produk</h3>
+                                <p class="fs-4"><?php echo $jumlahProduk;  ?> Kategori</p>
+                                <p><a href="kategori.php" class="text-white no-decoration">Lihat Detail</a></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
