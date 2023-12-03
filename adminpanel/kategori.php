@@ -81,7 +81,7 @@
 
         <div class="mt-3">
             <h2>List Kategori</h2>
-            <div class="table-responsive  mt-5">
+            <div class="table-responsive mt-5">
                 <table class="table">
                     <thead>
                         <tr>

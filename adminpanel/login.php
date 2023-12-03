@@ -25,8 +25,8 @@
     </style>
 
 <body>
-    <div class="main d-flex flex-column justify-content-center align-items-center">
-        <div class="login-box p-5 shadow">
+    <div class="main d-flex flex-column justify-content-center align-items-center bg-dark-subtle">
+        <div class="login-box p-5 shadow bg-white">
             <form action="" method="post">
                 <div>
                     <label for="username">Username</label>
@@ -39,7 +39,7 @@
                     id="password">
                 </div>
                 <div>
-                    <button class="btn btn-success form-control mt-3" type="submit"
+                    <button class="btn btn-primary mt-3 form-control" type="submit"
                     name="loginbtn">Login</button>
                 </div>
             </form>
