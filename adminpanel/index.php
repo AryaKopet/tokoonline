@@ -75,8 +75,8 @@
                             </div>
                             <div class="col-6 text-white">
                                 <h3 class="fs-2">Produk</h3>
-                                <p class="fs-4"><?php echo $jumlahProduk;  ?> Kategori</p>
-                                <p><a href="kategori.php" class="text-white no-decoration">Lihat Detail</a></p>
+                                <p class="fs-4"><?php echo $jumlahProduk;  ?> Produk</p>
+                                <p><a href="produk.php" class="text-white no-decoration">Lihat Detail</a></p>
                             </div>
                         </div>
                     </div>

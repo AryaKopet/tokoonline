@@ -41,7 +41,7 @@
             <h3>Tambah Kategori</h3>
             <form action="" method="post">
                 <div>
-                    <label for="kategori">Kategori</label>
+                    <label for="kategori" class="mb-2">Kategori</label>
                     <input type="text" id="kategori" name="kategori" placeholder="nama kategori" class="form-control">
                 </div>
                 <div class="mt-3">
@@ -50,27 +50,33 @@
             </form>
 
             <?php
-                if(isset($_POST['simpan_kategori']))
+                if(isset($_POST['simpan_kategori'])){
                     $kategori = htmlspecialchars($_POST['kategori']);
+                    $queryExist = mysqli_query($con, "SELECT nama FROM kategori WHERE nama='$kategori'");
+                    $jumlahDataKategoriBaru = mysqli_num_rows($queryExist);
 
-                    $queryExist = mysqli_query($con, "SELECT nama FROM kategori WHERE nama= '$kategori'");
-                    $KategoriBaru = mysqli_num_rows($queryExist);
-
-                    if($KategoriBaru > 0){
-                    ?>
-                    <div class="alert alert-warning mt-3" role="alert">
-                        Kategori sudah tersedia
-                    </div>
-                    <?php
-                }else{
-                    $querySimpan = mysqli_query($con, "INSERT INTO kategori (nama) VALUES ('$kategori')");
-                
-                    if($querySimpan){}
-                    else{
-                        echo mysqli_error($con);
+                    if($jumlahDataKategoriBaru > 0){
+                        ?>
+                        <div class="alert alert-warning mt-3" role="alert">
+                            Kategori Sudah Tersedia
+                        </div>
+                        <?php
+                    }else{
+                        $querySimpan = mysqli_query($con, "INSERT INTO kategori (nama) VALUES ('$kategori')");
+                        if($querySimpan){
+                            ?>
+                            <div class="alert alert-primary mt-3" role="alert">
+                            Kategori Berhasil Ditambahkan
+                            </div>
+                            <meta http-equiv="refresh" content="1; url=kategori.php">
+                            <?php
+                        }else{
+                            echo mysqli_error($con);
                         }
+                    }
                 }
             ?>
+
         </div>
 
         <div class="mt-3">
@@ -89,20 +95,21 @@
                             if($jumlahKategori==0){
                         ?>
                             <tr>
-                                <td colspan=3 class="text-center">Data kategori tidak tersedia</td>
+                                <td colspan=3 class="text-center">Data Kategori Tidak Tersedia</td>
                             </tr>
                         <?php
                             }else{
-                                $number = 1;
+                                $jumlah = 1;
                                 while($data=mysqli_fetch_array($queryKategori)){
                         ?>  
                             <tr>
-                                <td><?php echo $number;  ?></td>
-                                <td><?php echo $data['nama']  ?></td>
-                                <td></td>
-                            </tr>
+                                <td><?php echo $jumlah;  ?></td>
+                                <td><?php echo $data['nama'];  ?></td>
+                                <td><a href="kategori-detail.php?p=<?php echo $data['id']; ?>" class="btn btn-info">
+                                <i class="fas fa-search"></i></a></td>
+                            </tr>   
                         <?php
-                                $number++;
+                                $jumlah++;
                                 }
                             }
                         ?>
