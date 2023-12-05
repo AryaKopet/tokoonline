@@ -22,13 +22,20 @@
             box-sizing: border-box;
             border-radius: 10px;
         }
+        .size{
+            font-size: 21px;
+            font-weight: 800;
+        }
     </style>
 
 <body>
     <div class="main d-flex flex-column justify-content-center align-items-center bg-dark-subtle">
         <div class="login-box p-5 shadow bg-white">
             <form action="" method="post">
-                <div>
+                <div class="text-center mb-3 size">
+                    Selamat datang admin
+                </div>
+                <div class="mb-2">
                     <label for="username">Username</label>
                     <input type="text" class="form-control" name="username"
                     id="username">
@@ -39,7 +46,7 @@
                     id="password">
                 </div>
                 <div>
-                    <button class="btn btn-primary mt-3 form-control" type="submit"
+                    <button class="btn btn-primary mt-3" type="submit"
                     name="loginbtn">Login</button>
                 </div>
             </form>
