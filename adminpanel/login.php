@@ -26,14 +26,18 @@
             font-size: 21px;
             font-weight: 800;
         }
+
+        .warna {
+            background-color: darkblue;
+        }
     </style>
 
 <body>
-    <div class="main d-flex flex-column justify-content-center align-items-center bg-dark-subtle">
+    <div class="main d-flex flex-column justify-content-center align-items-center warna">
         <div class="login-box p-5 shadow bg-white">
             <form action="" method="post">
                 <div class="text-center mb-3 size">
-                    Selamat datang admin
+                    SELAMAT DATANG ADMIN
                 </div>
                 <div class="mb-2">
                     <label for="username">Username</label>
@@ -45,10 +49,7 @@
                     <input type="password" class="form-control" name="password"
                     id="password">
                 </div>
-                <div>
-                    <button class="btn btn-primary mt-3" type="submit"
-                    name="loginbtn">Login</button>
-                </div>
+                <button class="btn btn-primary mt-3" type="submit" name="loginbtn">Login</button>
             </form>
         </div>
         

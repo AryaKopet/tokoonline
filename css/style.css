@@ -1,0 +1,42 @@
+.warna1{
+    background-color: #512B81;
+}
+
+.warna2{
+    background-color: #27005D;
+}
+
+.warna3{
+    background-color: #35155D;
+}
+
+.warna4{
+    background-color: #071952;
+}
+
+.banner{
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../image/ps.jpg');
+}
+
+.highlighted-kategori{
+    height: 250px;
+}
+
+.kategori-headset{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../image/headset.jpg');
+    background-size:cover;
+    background-position: center;
+}
+
+.kategori-keyboard{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../image/keyboard.jpg');
+    background-size:cover;
+    background-position: center;
+}
+
+.kategori-mouse{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../image/mouse.jpg');
+    background-size:cover;
+    background-position: center;
+}
