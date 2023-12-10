@@ -131,7 +131,7 @@
                                     </div>
                 <?php
                                 }else{
-                                    if($imageFileType != 'jpg' && $imageFileType != 'png' && $imageFileType != 'gif'){
+                                    if($imageFileType != 'jpg' && $imageFileType != 'png' && $imageFileType != 'jpeg'){
                  ?>
                                     <div class="alert alert-warning mt-3" role="alert">
                                         Gambar wajib bertipe jpg atau png atau gif

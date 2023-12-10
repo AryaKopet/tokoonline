@@ -1,5 +1,5 @@
 .warna1{
-    background-color: #512B81;
+    background-color: #65B741;
 }
 
 .warna2{
@@ -7,11 +7,11 @@
 }
 
 .warna3{
-    background-color: #35155D;
+    background-color: #7E30E1;
 }
 
 .warna4{
-    background-color: #071952;
+    background-color: rgb(24, 1, 66);
 }
 
 .banner{
@@ -39,4 +39,50 @@
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../image/mouse.jpg');
     background-size:cover;
     background-position: center;
+}
+
+.no-decoration{
+    text-decoration: none;
+    color: white;
+}
+
+.no-decoration:hover{
+    color: #27005D;
+}
+
+.text-size{
+    font-size: 22px;
+    color: #27005D;
+}
+
+.image-box{
+    height: 250px;
+}
+
+.image-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content-subscribe{
+    background-color: rgb(24, 1, 66);
+}
+
+.content-subscribe a{
+    color: #fff;
+}
+
+.banner-produk{
+    height: 45vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../image/ps.jpg');
+    background-position: 1% 5%;
+}
+
+.produk-terkait-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
