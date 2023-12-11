@@ -63,8 +63,7 @@
     <!-- tentang kami -->
     <div class="container-fluid warna4 py-5">
         <div class="container text-center text-white">
-            <h3>Tentang Kami</h3>
-            <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia exercitationem perferendis earum architecto ad reiciendis? Ea, voluptates. Nemo, aut non repellat praesentium ad dolorum nam tenetur totam voluptates accusamus quia ipsum ratione neque voluptatum suscipit doloribus explicabo repudiandae nesciunt temporibus ducimus enim libero vel commodi cumque! Tenetur error laboriosam vitae officiis architecto repellendus, odit impedit, consequatur iste dolor blanditiis amet dolorem earum optio sequi eius! Alias asperiores fugit obcaecati, maxime, placeat laudantium deserunt labore facilis perspiciatis dolores nemo quidem eveniet?</p>
+            <h3>Produk Unggulan</h3>
         </div>
     </div>
 
@@ -83,7 +82,7 @@
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $data['nama'];?></h5>
                             <p class="card-text text-truncate"><?php echo $data['nama'];?></p>
-                            <p class="card-text text-size">Rp 120.000</p>
+                            <p class="card-text text-size">Rp <?php echo $data['harga'];?></p>
                             <a href="produk-detail.php?nama=<?php echo $data['nama'];?>" class="btn btn-primary">Lihat Detail</a>
                         </div>
                     </div>
