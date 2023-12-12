@@ -1,6 +1,6 @@
 <style>
   .warna{
-    background-color: #001B79;
+    background-color: #3081D0;
   }
 </style>
 

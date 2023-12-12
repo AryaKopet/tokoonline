@@ -28,7 +28,7 @@
         }
 
         .warna {
-            background-color: darkblue;
+            background-color: #3081D0;
         }
     </style>
 

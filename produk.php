@@ -77,7 +77,7 @@
                                 <h5 class="card-title"><?php echo $produk['nama'] ?></h5>
                                 <p class="card-text text-truncate"><?php echo $produk['detail'] ?></p>
                                 <p class="card-text text-size">Rp <?php echo $produk['harga'] ?></p>
-                                <a href="produk-detail.php?nama=<?php echo $produk['nama'];?>" class="btn btn-primary">Lihat Detail</a>
+                                <a href="produk-detail.php?nama=<?php echo $produk['nama'];?>" class="btn warna3">Lihat Detail</a>
                             </div>
                         </div>
                     </div>

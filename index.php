@@ -83,13 +83,13 @@
                             <h5 class="card-title"><?php echo $data['nama'];?></h5>
                             <p class="card-text text-truncate"><?php echo $data['nama'];?></p>
                             <p class="card-text text-size">Rp <?php echo $data['harga'];?></p>
-                            <a href="produk-detail.php?nama=<?php echo $data['nama'];?>" class="btn btn-primary">Lihat Detail</a>
+                            <a href="produk-detail.php?nama=<?php echo $data['nama'];?>" class="btn warna3 text-white">Lihat Detail</a>
                         </div>
                     </div>
                 </div>
                 <?php } ?>
             </div>
-            <a href="produk.php" class="btn btn-outline-primary mt-3 fs-6">See More</a>
+            <a href="produk.php" class="btn warna3 text-white mt-3 fs-6">See More</a>
         </div>
     </div>
       
